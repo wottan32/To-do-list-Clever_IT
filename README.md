@@ -44,4 +44,4 @@ Utiliza JWT para la autenticación de los usuarios. El token proporciona acceso 
 Para ejecutar la aplicación en modo de desarrollo:
 
 ```bash
-python main.py
+python app.py

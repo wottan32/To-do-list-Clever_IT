@@ -1,0 +1,106 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px; /* Increased width for better spacing */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-header {
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-item {
+  background: #e7e7e7;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.todo-item:hover {
+  background-color: #dcdcdc; /* Slightly darker on hover for interaction feedback */
+}
+
+.todo-item:last-child {
+  margin-bottom: 0;
+}
+
+.todo-item label {
+  flex-grow: 1;
+  cursor: pointer; /* Indicates that the label is clickable */
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+button {
+  background: #5c6bc0; /* Changed to a more neutral color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #3f51b5; /* Darker shade on hover */
+}
+
+button:focus {
+  outline: none; /* Removes the default focus outline */
+  box-shadow: 0 0 0 2px rgba(92, 107, 192, 0.5); /* Custom focus style */
+}
+
+.add-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.add-task input {
+  padding: 10px;
+  flex: 1; /* Allows input to fill available space */
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.add-task button {
+  flex-basis: 25%; /* Button width */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .add-task input,
+  .add-task button {
+    flex-basis: auto; /* Allows input and button to adjust on smaller screens */
+    width: 100%; /* Full width on smaller screens */
+    margin-top: 10px; /* Spacing between input and button on smaller screens */
+  }
+
+  .add-task {
+    flex-direction: column; /* Stack input and button vertically on smaller screens */
+  }
+}

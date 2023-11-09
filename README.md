@@ -43,5 +43,9 @@ Utiliza JWT para la autenticación de los usuarios. El token proporciona acceso 
 
 Para ejecutar la aplicación en modo de desarrollo:
 
+## Documentacion API en postman
+
+https://documenter.getpostman.com/view/15402853/2s9YXiYMGP
+
 ```bash
 python app.py
